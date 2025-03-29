@@ -36,7 +36,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         if("page".equalsIgnoreCase(AbstractPage.reportType)){
             String summaryReportString = SummaryReport.generateSummaryReport();
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
-            String Filename = getUserDirectory()+sp+"Reports"+sp+"Customized_BDD_Cucumber_Report_"+simpleDateFormat.format(new Date())+".html";
+            String Filename = getUserDirectory()+sp+"Reports"+sp+"UserBased_Summary_Report_"+simpleDateFormat.format(new Date())+".html";
             SummaryReport.writeFiles(summaryReportString,Filename);
             Util.cleanUpFiles();
 
